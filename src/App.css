@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0093e9, #80d0c7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  min-width: 200px;
+  font-size: 14px;
+}
+
+.dropdown-btn {
+  padding: 8px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu .item {
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .item:hover {
+  background-color: #ddd;
+}
+
+.dropdown-menu .item.active {
+  font-weight: bold;
+}
